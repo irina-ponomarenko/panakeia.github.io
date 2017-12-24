@@ -1,0 +1,49 @@
+.list-dolor{
+  display: flex;
+  flex-direction: column;
+  li{
+  &:nth-child(2n + 1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+    &:nth-child(2n){
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  }
+  button{
+    outline: none;
+    @include button;
+    @include hvr-back-pulse;
+    width: 213px;
+    height: 54px;
+    background-color: #dd4b2b;
+    color: white;
+  }
+  .darkblue{
+    background-color: #4b4e73;
+  }
+}
+.about-dolor{
+  p{
+    @include style-font;
+    margin-bottom: 50px;
+  }
+  h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+.img-dolor {
+  max-width: 500px;
+  border: 1px solid #bfbfbf;
+  margin-right: 30px;
+  img{
+    display: block;
+  }
+}
+
+

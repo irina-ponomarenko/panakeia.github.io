@@ -1,0 +1,64 @@
+.top{
+  background-color: #d75d0e;
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+}
+.list-footer{
+  text-align: center;
+  li{
+    font-family: $font-roboto;
+    line-height: 24px;
+    font-size: 18px;
+    a{
+      color: $color;
+      text-decoration: none;
+    }
+  }
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../images/bottom-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+  @media \0screen\,screen {
+    .bottom{
+      &:before {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#ff000000", GradientType=0);
+      }
+    }
+  }
+}
+.bottom{
+  p{
+    @include style-font;
+    font-size: 18px;
+    color: $color;
+    max-width: 648px;
+    text-align: center;
+    a{
+      color: white;
+    }
+  }
+}
+.footer-bottom{
+  z-index: 11;
+}

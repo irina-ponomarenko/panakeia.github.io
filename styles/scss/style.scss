@@ -1,0 +1,13 @@
+@import "compass/css3";
+@import "compass/reset";
+
+@import "base/variables";
+@import "base/mixins";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "layout/sections/welcome";
+@import "layout/sections/news";
+@import "layout/sections/newsletter";
+@import "layout/sections/dolor-sit";

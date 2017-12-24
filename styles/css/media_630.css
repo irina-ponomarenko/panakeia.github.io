@@ -1,0 +1,59 @@
+@media only screen and (max-device-width: 630px) {
+    .wrapper {
+        padding-top: 45px;
+        padding-bottom: 57px;
+    }
+
+    .section-header {
+        min-width: 400px;
+    }
+
+    .section-header h2 {
+        margin-bottom: 45px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .list-news {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-news li {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .list-news footer h3 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .list-news footer span {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .list-news footer button {
+        margin-bottom: 30px;
+    }
+
+    .newsletter {
+        padding-bottom: 120px;
+    }
+
+    .newsletter form {
+        text-align: center;
+        width: 350px;
+    }
+
+    .newsletter form input {
+        padding-left: 0;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    .newsletter form button {
+        margin-top: 30px;
+    }
+}
